@@ -8,53 +8,49 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256[]",
-						"name": "_x",
-						"type": "uint256[]"
+						"internalType": "uint256",
+						"name": "_dividend",
+						"type": "uint256"
 					}
 				],
-				"name": "fCalldata",
+				"name": "getExactDividedBy2And3WithoutModifier",
 				"outputs": [
 					{
-						"internalType": "uint256[]",
+						"internalType": "uint256",
 						"name": "",
-						"type": "uint256[]"
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "fMemory",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "fStorage",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_dividend",
 						"type": "uint256"
 					}
 				],
-				"name": "x",
+				"name": "getExactEividedBy2And3",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -71,7 +67,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"05_DataStorage/DataStorage.sol": "DataStorage"
+			"13_Inheritance/ModifierInheritance.sol": "Identifier"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -85,12 +81,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"05_DataStorage/DataStorage.sol": {
-			"keccak256": "0xde36df4aec8fc6afbc34bbc2d2334a63c2875be9d94df8ba3208f8dfa27fbc89",
+		"13_Inheritance/ModifierInheritance.sol": {
+			"keccak256": "0x560c87aa420297040329aac8171a760bb4b736a0014fea3195567529d42df0a0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://90688277b0ed257547213a2fbbc0dda65f8fffaea857dfbbfd9d5b6443ee9c87",
-				"dweb:/ipfs/QmXMPb62ejwv2eDDEm5YcEUjrTf2SHbAAV2ETTNnShwaj7"
+				"bzz-raw://cd181cb7fcaca8edeb7eb4bad396a49aee9f78eeba9f713f1c8f1b902b17d851",
+				"dweb:/ipfs/QmQbbmcVECGZf4DWknnpNR9Gs1U1oswBzKFr82KV6YAuYn"
 			]
 		}
 	},

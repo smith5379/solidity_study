@@ -10,7 +10,7 @@ contract Base1{
 
 contract Identifier is Base1{
     //计算一个数分别被2除和被3除的值, 但是传输的参数必须是2和3的倍数
-    function getExactEividedBy2And3(uint _dividend) public exactDividedBy2And3(_dividend) pure returns(uint, uint){
+    function getExactDividedBy2And3(uint _dividend) public exactDividedBy2And3(_dividend) pure returns(uint, uint){
         return getExactDividedBy2And3WithoutModifier(_dividend);
     }
 
@@ -23,8 +23,8 @@ contract Identifier is Base1{
 
     //重写Modifier: 不重写时，输入9调用getExactDividedBy2And3，会revert，因为无法通过检查
     //删掉下面三行注释重写Modifier，这时候输入9调用getExactDividedBy2And3， 会调用成功
-    // modifier exactDividedBy2And3(uint _a) override {
-    //     _;
-    // }
+    modifier exactDividedBy2And3(uint _a) override {
+        _;
+    }
 
 }

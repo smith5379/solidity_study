@@ -13,7 +13,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getExactDividedBy2And3WithoutModifier",
+				"name": "getExactDividedBy2And3",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -37,7 +37,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getExactEividedBy2And3",
+				"name": "getExactDividedBy2And3WithoutModifier",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -82,11 +82,11 @@
 	},
 	"sources": {
 		"13_Inheritance/ModifierInheritance.sol": {
-			"keccak256": "0x560c87aa420297040329aac8171a760bb4b736a0014fea3195567529d42df0a0",
+			"keccak256": "0x7934fbcb7227dd343afddba52bdb32da4dcef0ff8e169a326d52d7324fb03210",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cd181cb7fcaca8edeb7eb4bad396a49aee9f78eeba9f713f1c8f1b902b17d851",
-				"dweb:/ipfs/QmQbbmcVECGZf4DWknnpNR9Gs1U1oswBzKFr82KV6YAuYn"
+				"bzz-raw://ee6944659edfc697092ca5455ef2189e950b3ccf1e96898a6d6df462a5d3ded3",
+				"dweb:/ipfs/QmQJHZn52oKPJeTp2J91277fdqT8iKQnmFkZ1MTYRwgVFc"
 			]
 		}
 	},

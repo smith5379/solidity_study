@@ -23,3 +23,8 @@ coverage.json
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+.deps
+.git
+.idea
+.states

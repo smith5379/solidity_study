@@ -11,72 +11,78 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "CallFailed",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "SendFailed",
-				"type": "error"
-			},
-			{
 				"inputs": [
 					{
-						"internalType": "address payable",
-						"name": "_to",
+						"internalType": "contract OtherContract",
+						"name": "_Address",
 						"type": "address"
-					},
+					}
+				],
+				"name": "callGetX",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
-				"name": "callETH",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address payable",
-						"name": "_to",
+						"internalType": "address",
+						"name": "_Address",
 						"type": "address"
-					},
+					}
+				],
+				"name": "callGetX2",
+				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
-				"name": "sendETH",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
-						"internalType": "address payable",
-						"name": "_to",
+						"internalType": "address",
+						"name": "_Address",
 						"type": "address"
 					},
 					{
 						"internalType": "uint256",
-						"name": "amount",
+						"name": "x",
 						"type": "uint256"
 					}
 				],
-				"name": "transferETH",
+				"name": "callSetX",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "otherContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "setXTransferETH",
+				"outputs": [],
 				"stateMutability": "payable",
-				"type": "receive"
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -92,7 +98,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"20_SendETH/SendETH.sol": "SendETH"
+			"21_CallContract/CallContract.sol": "CallContract"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -106,12 +112,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"20_SendETH/SendETH.sol": {
-			"keccak256": "0x22b656b497394f3c4061f3f7aa3ec796b8174c40f4b623bf57cefffaf9cf5a4a",
+		"21_CallContract/CallContract.sol": {
+			"keccak256": "0x1e59ee7ef0f32784a98725d8f042683b90ccf50cbad147a3d2bf94c9b8c64165",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b2453fc77020921fb3397674d19e11399fe6a1617bcb9d02bd5a9d726ef930bd",
-				"dweb:/ipfs/Qmcqm2jTQXQx343YB4tH3UKcLhSHwMvHCULPBTAarM2fZv"
+				"bzz-raw://a550c4bc12b39c87494de345bcb21870201ecd2259c0da6e7c85f358968d27c9",
+				"dweb:/ipfs/QmU5eLTwfeBowtmJSohGAswEkT9EPK3N8DL2FQVA6wXSSz"
 			]
 		}
 	},

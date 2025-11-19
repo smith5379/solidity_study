@@ -100,4 +100,5 @@ contract TryCatch {
             emit CatchEvent(reason);
         }
     }
+
 }

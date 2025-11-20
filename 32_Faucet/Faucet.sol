@@ -73,3 +73,46 @@ contract ERC20 is IERC20{
     }
 
 }
+
+
+
+contract Faucet {
+
+    //每次领取100单位代币
+    uint256 public amountAllowed = 100;
+    
+    //token合约地址
+    address public tokenContract; 
+    
+    //记录领取过代币的地址
+    mapping(address => bool) public requestedAddress;
+
+    event SendToken(address indexed Receiver, uint256 indexed Amount);
+
+    //传入一个实现了IERC20接口的合约的地址
+    constructor(address _tokenContract){
+        tokenContract = _tokenContract;
+    }
+
+    //用户领取代币函数
+    function requestTokens() external {
+        require(!requestedAddress[msg.sender], "Can't Request Multiple Times");
+
+        //类型转换， 转换后可以调用IERC20的函数
+        IERC20 token = IERC20(tokenContract);
+
+        require(token.balanceOf(address(this)) >= amountAllowed, "Faucet Empty!");
+
+        //转账
+        token.transfer(msg.sender, amountAllowed);
+
+        //记录领取地址
+        requestedAddress[msg.sender] = true;
+
+        //释放SendToken事件
+        emit SendToken(msg.sender, amountAllowed);
+
+    }
+
+
+}

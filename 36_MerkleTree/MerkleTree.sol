@@ -74,7 +74,7 @@ contract MerkleTree is ERC721 {
         root = merkleroot;
     }
 
-    // 利用Merkle书验证地址并mint
+    // 利用Merkle树验证地址并mint, 注意proof数组元素的顺序不可变
     function mint(address account, uint256 tokenId, bytes32[] calldata proof)
     external
     {

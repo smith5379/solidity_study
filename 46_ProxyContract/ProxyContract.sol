@@ -31,6 +31,8 @@ contract Proxy {
      */
     function _delegate() internal {
         assembly {
+            //内联汇编
+
             // Copy msg.data. We take full control of memory in this inline assembly
             // block because it will not return to Solidity code. We overwrite the
             // 读取位置为0的storage，也就是implementation地址。
